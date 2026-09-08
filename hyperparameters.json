@@ -1,0 +1,126 @@
+{
+  "models": [
+    {
+      "name": "KMeans",
+      "label": "K-Means Clustering",
+      "description": "Fast and scalable clustering algorithm that groups data into a predefined number of clusters.",
+      "parameters": [
+        {
+          "name": "auto_k",
+          "label": "Auto Select Clusters",
+          "type": "toggle",
+          "default": true,
+          "description": "Automatically determine optimal number of clusters using the Elbow method."
+        },
+        {
+          "name": "n_clusters",
+          "label": "Number of Clusters",
+          "type": "slider",
+          "min": 2,
+          "max": 20,
+          "step": 1,
+          "default": 5,
+          "description": "Defines how many customer segments to create.",
+          "business_mapping": "Number of customer segments."
+        },
+        {
+          "name": "max_iter",
+          "label": "Max Iterations",
+          "type": "slider",
+          "min": 100,
+          "max": 1000,
+          "step": 50,
+          "default": 300
+        }
+      ],
+      "presets": [
+        {
+          "name": "Quick Analysis",
+          "n_clusters": 4,
+          "n_init": 5,
+          "max_iter": 200
+        },
+        {
+          "name": "Balanced",
+          "n_clusters": 6,
+          "n_init": 10,
+          "max_iter": 300
+        },
+        {
+          "name": "Detailed Segmentation",
+          "n_clusters": 10,
+          "n_init": 15,
+          "max_iter": 500
+        }
+      ]
+    },
+    {
+      "name": "HDBSCAN",
+      "label": "Density-Based Clustering (Advanced)",
+      "description": "Automatically finds clusters based on data density without requiring a predefined number of clusters.",
+      "parameters": [
+        {
+          "name": "min_cluster_size",
+          "label": "Cluster Size (Granularity)",
+          "type": "slider",
+          "min": 5,
+          "max": 500,
+          "step": 5,
+          "default": 50,
+          "description": "Minimum number of points required to form a cluster.",
+          "business_mapping": "Minimum size of a customer segment."
+        },
+        {
+          "name": "min_samples",
+          "label": "Clustering Strictness",
+          "type": "slider",
+          "min": 1,
+          "max": 500,
+          "step": 1,
+          "default": 50,
+          "description": "Controls how strictly clusters are formed.",
+          "business_mapping": "Strictness of grouping customers."
+        },
+        {
+          "name": "metric",
+          "label": "Distance Metric",
+          "type": "dropdown",
+          "options": [
+            {
+              "value": "euclidean",
+              "label": "Euclidean Distance"
+            },
+            {
+              "value": "manhattan",
+              "label": "Manhattan Distance"
+            },
+            {
+              "value": "cosine",
+              "label": "Cosine Similarity"
+            }
+          ],
+          "default": "euclidean",
+          "description": "Defines how similarity between data points is calculated.",
+          "business_mapping": "How customer similarity is measured."
+        }
+      ],
+      "presets": [
+        {
+          "name": "Broad Segments",
+          "min_cluster_size": 200,
+          "min_samples": 200
+        },
+        {
+          "name": "Balanced",
+          "min_cluster_size": 100,
+          "min_samples": 100
+        },
+        {
+          "name": "Fine-Grained",
+          "min_cluster_size": 50,
+          "min_samples": 50
+        }
+      ]
+    }
+  ]
+}

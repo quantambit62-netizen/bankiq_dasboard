@@ -1,0 +1,73 @@
+{
+    "insight": {
+        "clusters": {
+            "0": {
+                "title": "Low-Activity Customers",
+                "insights": [
+                    "Customers in this cluster have very low average monthly credit amounts and withdrawal amounts.",
+                    "The average monthly net flow is moderate, indicating a stable financial situation.",
+                    "Variation in monthly net flow and withdrawal/credit amounts is very low, suggesting consistent behavior.",
+                    "Customers have an average transaction counts are very low, indicating limited financial activity.",
+                    "Most transactions occur on weekends, indicating a preference for weekend activities.",
+                    "The low activity levels suggest that customers in this cluster may not require complex financial products.",
+                    "Savings accounts and basic debit cards may be sufficient for their needs.",
+                    "They may benefit from educational resources on personal finance and budgeting."
+                ],
+                "recommendations": [
+                    {
+                        "product": "Savings Account (AltSave)",
+                        "reason": "This product is a good fit due to its simplicity and low-maintenance nature, which aligns with the customer's low-activity profile."
+                    },
+                    {
+                        "product": "Debit Cards (Multiple Variants)",
+                        "reason": "This product is suitable for customers who prefer basic financial services and do not require complex features."
+                    }
+                ]
+            },
+            "1": {
+                "title": "High-Risk Customers",
+                "insights": [
+                    "Customers in this cluster have very high average monthly credit amounts and withdrawal amounts.",
+                    "The average monthly net flow is very high, indicating a high-risk financial situation.",
+                    "Variation in monthly net flow and withdrawal/credit amounts is very low, suggesting consistent behavior.",
+                    "Customers have an average transaction counts are very low, indicating limited financial activity.",
+                    "Most transactions occur on weekdays, indicating a preference for weekday activities.",
+                    "The high-risk behavior suggests that customers in this cluster may require specialized financial products and services.",
+                    "They may benefit from financial counseling and budgeting assistance."
+                ],
+                "recommendations": [
+                    {
+                        "product": "AltInvest \u2013 Real Estate Investment Notes (REIN)",
+                        "reason": "This product is a good fit due to its high-risk, high-reward nature, which aligns with the customer's high-risk profile."
+                    },
+                    {
+                        "product": "AltMall (E-commerce + Financing)",
+                        "reason": "This product is suitable for customers who require flexible payment options and may benefit from the high-risk, high-reward nature of the product."
+                    }
+                ]
+            },
+            "2": {
+                "title": "High-Transaction Customers",
+                "insights": [
+                    "Customers in this cluster have very high average monthly credit amounts and withdrawal amounts.",
+                    "The average monthly net flow is very low, indicating a high-transaction volume.",
+                    "Variation in monthly net flow and withdrawal/credit amounts is very high, suggesting frequent changes in financial behavior.",
+                    "Customers have an average transaction counts are very high, indicating frequent financial activity.",
+                    "Most transactions occur on weekdays, indicating a preference for weekday activities.",
+                    "The high-transaction volume suggests that customers in this cluster may require complex financial products and services.",
+                    "They may benefit from financial planning and budgeting assistance."
+                ],
+                "recommendations": [
+                    {
+                        "product": "AltBank App / Digital Banking",
+                        "reason": "This product is a good fit due to its comprehensive digital banking features, which align with the customer's high-transaction profile."
+                    },
+                    {
+                        "product": "Credit Cards",
+                        "reason": "This product is suitable for customers who require flexible payment options and may benefit from the rewards and benefits offered by the credit card."
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "dynamic": {
+    "avg_monthly_credit_amount": "Average amount credited to the account per month",
+    "avg_monthly_withdrawal_amount": "Average amount debited from the account per month",
+    "avg_monthly_net_flow": "Average monthly net flow (credit minus withdrawal)",
+    "monthly_net_flow_variance": "Month-to-month variability in net flow",
+    "monthly_withdrawal_amount_variance": "Month-to-month variability in withdrawal amount",
+    "monthly_credit_amount_variance": "Month-to-month variability in credit amount",
+    "avg_monthly_credit_count": "Average number of credit transactions per month",
+    "avg_monthly_withdrawal_count": "Average number of withdrawal transactions per month",
+    "monthly_withdrawal_count_variance": "Month-to-month variability in withdrawal transaction count",
+    "monthly_credit_count_variance": "Month-to-month variability in credit transaction count",
+    "monthly_atm_txn_count": "Average number of ATM transactions per month",
+    "monthly_web_txn_count": "Average number of web/app transactions per month",
+    "monthly_cash_txn_count": "Average number of cash transactions per month",
+    "monthly_weekday_txn_pct": "Share of transactions that occur on weekdays (0-100)",
+    "monthly_weekend_txn_pct": "Share of transactions that occur on weekends (0-100)"
+  },
+  "static": {
+    "gender": "Customer gender",
+    "altbankstatus": "AltBank product status (Yes/No)",
+    "altmall_status": "AltMall product status (Yes/No)",
+    "age_group": "Customer age segment",
+    "ussdstatus": "USSD product status (Yes/No)",
+    "altbiz_status": "AltBiz product status (Yes/No)",
+    "altdrive_status": "AltDrive product status (Yes/No)",
+    "cardstatus": "Card product status (Yes/No)",
+    "religion": "Customer religion",
+    "rentfinance_status": "RentFinance product status (Yes/No)",
+    "altprostatus": "AltPro product status (Yes/No)",
+    "altpower_status": "AltPower product status (Yes/No)",
+    "marital_status": "Customer marital status"
+  }
+}

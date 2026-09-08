@@ -1,0 +1,53 @@
+{
+  "metric": "silhouette_score",
+  "label": "Silhouette Score",
+  "range": {
+    "min": -1,
+    "max": 1
+  },
+  "description": "Measures how similar a data point is to its own cluster compared to other clusters. Higher values indicate better-defined clusters.",
+  "interpretation": [
+    {
+      "range": [0.7, 1.0],
+      "quality": "Excellent",
+      "color": "green",
+      "meaning": "Clusters are well separated and clearly defined.",
+      "recommendation": "No major changes needed. Clustering is highly reliable."
+    },
+    {
+      "range": [0.5, 0.7],
+      "quality": "Good",
+      "color": "light_green",
+      "meaning": "Clusters are reasonably well separated with slight overlap.",
+      "recommendation": "Acceptable result. Minor tuning may improve segmentation."
+    },
+    {
+      "range": [0.25, 0.5],
+      "quality": "Moderate",
+      "color": "yellow",
+      "meaning": "Clusters have noticeable overlap and are not very distinct.",
+      "recommendation": "Consider tuning parameters or trying a different clustering model."
+    },
+    {
+      "range": [0.0, 0.25],
+      "quality": "Weak",
+      "color": "orange",
+      "meaning": "Clusters are poorly defined and overlapping significantly.",
+      "recommendation": "Re-evaluate features or increase/decrease number of clusters."
+    },
+    {
+      "range": [-1.0, 0.0],
+      "quality": "Poor",
+      "color": "red",
+      "meaning": "Data points may be assigned to wrong clusters.",
+      "recommendation": "Clustering is not reliable. Try a different model or preprocessing approach."
+    }
+  ],
+  "business_mapping": "Indicates how clearly customer segments are separated from each other.",
+  "ui_display": {
+    "type": "gauge",
+    "show_value": true,
+    "color_zones": true,
+    "tooltip": "Higher score means better cluster separation"
+  }
+}
